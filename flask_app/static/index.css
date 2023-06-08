@@ -1,0 +1,30 @@
+.container {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: peachpuff;
+    color: teal;
+    width: 1200px;
+    height: 1200px;
+}
+.columns {
+    display: flex;
+    justify-content: space-evenly;
+}
+.column_1 {
+    font-size: 18pt;
+}
+.column_2 {
+    font-size: 18pt;
+}
+h1 {
+    text-align: center;
+    padding-top: 50px;
+}
+h2 {
+    text-align: center;
+}
+button {
+    background-color: teal;
+    color:peachpuff;
+}

@@ -1,0 +1,48 @@
+.container {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: peachpuff;
+    color: teal;
+    width: 1200px;
+    height: 1200px;
+    font-size: 16pt;
+}
+label{
+    vertical-align: top;
+}
+
+textarea {
+    height: 200px;
+    width: 300px;
+}
+button {
+    background-color: teal;
+    color: peachpuff;
+    margin-left: 275px;
+    width: 125px;
+}
+.name {
+    margin-left: 50px;
+    margin-bottom: 3px;
+}
+
+.links {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+.column_1 {
+    margin-left: 150px;
+}
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.made {
+    margin-left: 600px;
+}
+.radio {
+    margin-left: 600px;
+}

@@ -1,0 +1,29 @@
+.container {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: peachpuff;
+    color: teal;
+    width: 1200px;
+    height: 1200px;
+}
+.box {
+    width: 600px;
+    border: 2px solid black;
+    padding: 10px;
+    margin: 20px;
+    font-size: 16pt;
+}
+h1 {
+    margin-left: 50px;
+}
+.links {
+    margin-left: 400px;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+.posted_by {
+    margin-left: 30px;
+    font-size: 16pt;
+}

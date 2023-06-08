@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Recipes</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='all_recipes.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome, {{session.first_name}} {{session.last_name}}!</h1>
+        <div class="nav">
+            <div>
+                <h2>All Posted Recipes:</h2>
+            </div>
+            <div class="links">
+                <a href="/recipes/new">+ Create</a>
+                <a href="/logout">Logout</a>
+            </div>
+        </div>
+        <div class="table">
+            <table>
+                <tr>
+                    <th>Name</thead>
+                    <th>Under 30 Minutes</thead>
+                    <th>Posted By</thead>
+                    <th>Actions</thead>
+                </tr>
+                {% for recipe in recipes: %}
+                    <tr>
+                        <td><a href="/recipes/{{recipe.id}}">{{recipe.name}}</a></td>
+                        <td>{{recipe.under_30}}</td>
+                        <td>{{recipe.first_name}} {{recipe.last_name}}</td>
+                        <td><a href="/recipes/{{recipe.id}}">Show Recipe</a> 
+                            {% if session["logged_in"] == recipe.user_id %}
+                            | <a href="/recipes/update/{{recipe.id}}">Edit</a> | <a href="/recipes/delete/{{recipe.id}}">Delete</a></td>
+                            {% endif %}
+                    </tr>
+                {% endfor %}
+            </table>
+        </div>
+    </div>
+</body>
+</html>

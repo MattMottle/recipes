@@ -1,0 +1,23 @@
+.container {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: peachpuff;
+    color: teal;
+    width: 1200px;
+    height: 1200px;
+}
+.nav {
+    display: flex;
+    width: 600px;
+}
+.links {
+    margin-left: 200px;
+    margin-top: 30px;
+}
+a {
+    margin: 10px;
+}
+.table {
+    text-align: center;
+}
